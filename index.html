@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Fábio Amancio - Advocacia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style-advogado.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <meta name="description" content="Dr. Fábio Amancio - Advocacia especializada em Direito Cível, Trabalhista e Previdenciário. Atendimento ético e personalizado." />
+  <meta property="og:title" content="Dr. Fábio Amancio - Advocacia" />
+  <meta property="og:description" content="Escritório jurídico com atuação em diversas áreas do Direito. Profissionalismo e agilidade no atendimento." />
+  <meta property="og:image" content="https://via.placeholder.com/600x315.png?text=Advocacia" />
+  <meta name="theme-color" content="#3e2723" />
+</head>
+<body>
+  <header class="hero">
+    <div class="header-content">
+      <h1>Dr. Fábio Amancio</h1>
+      <p>Advocacia Cível, Trabalhista e Previdenciária</p>
+    </div>
+    <img src="img/logotipo.png" alt="Foto do Advogado" class="profile-pic" />
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#atuacao">Atuação</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <main>
+    <section id="sobre" class="card fade-up">
+      <h2>Sobre o Escritório</h2>
+      <p>Com mais de 10 anos de experiência, o escritório do Dr. Fábio Amancio oferece atendimento jurídico com ética, agilidade e excelência. Atuamos com foco em resultados e no melhor interesse do cliente.</p>
+    </section>
+
+    <section id="atuacao" class="card fade-up">
+      <h2>Áreas de Atuação</h2>
+      <div class="services-grid">
+        <div class="service-item">
+          <img src="img/direito-civil.jpg" alt="Direito Cível">
+          <p>Direito Cível</p>
+        </div>
+        <div class="service-item">
+          <img src="img/direito-trabalhista.jpg" alt="Direito Trabalhista">
+          <p>Direito Trabalhista</p>
+        </div>
+        <div class="service-item">
+          <img src="img/direito-previdenciario.jpg" alt="Direito Previdenciário">
+          <p>Direito Previdenciário</p>
+        </div>
+        <div class="service-item">
+          <img src="img/consultoria-juridica.jpg" alt="Consultoria Jurídica">
+          <p>Consultoria Jurídica</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="card fade-up">
+      <h2>Contato</h2>
+      <form action="https://formspree.io/f/xoqgrjnd" method="POST">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <p>Email: atendimento@joaoandradeadv.com</p>
+      <p>Telefone: (31) 99999-9999</p>
+      <p>Endereço: Av. Justiça, 123 - Centro, Belo Horizonte - MG</p>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.527165110689!2d-43.93459858465924!3d-19.931017186607025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa690cac!2sFórum%20Lafayette!5e0!3m2!1spt-BR!2sbr!4v1611168000000!5m2!1spt-BR!2sbr" width="100%" height="250" style="border:0; margin-top: 20px; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+  </main>
+
+  <a href="https://wa.me/5531999999999" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" />
+  </a>
+
+  <button id="back-to-top" onclick="scrollToTop()" title="Voltar ao topo">&#8679;</button>
+
+  <footer>
+    <p>&copy; 2025 Dr. Fábio Amancio Advocacia. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function(e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            window.scrollTo({ top: target.offsetTop - 60, behavior: "smooth" });
+          }
+        });
+
+        const backToTopBtn = document.getElementById("back-to-top");
+        window.addEventListener("scroll", () => {
+          backToTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
+        });
+      });
+    });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
