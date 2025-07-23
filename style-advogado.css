@@ -6,6 +6,22 @@
   font-family: 'Work Sans', sans-serif;
 }
 
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  background-image: url("img/logo-marca.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+}
+
 body {
   background: #30368d;
   color: #222;
