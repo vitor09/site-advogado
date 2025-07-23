@@ -13,7 +13,7 @@ body::after {
   right: 0;
   width: 400px;
   height: 100%;
-  background-image: url("img/logo-marca.png");
+  background-image: url("img/logotipo.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top right;
