@@ -122,18 +122,18 @@ input, textarea {
 }
 
 button[type="submit"] {
-  background: #30368d;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+  background: #c8a35f;
+  color: #222;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 button[type="submit"]:hover {
-  background: #1c1c1c;
+  background: #b68b3f;
 }
 
 footer {
