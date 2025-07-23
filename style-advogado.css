@@ -110,15 +110,23 @@ h2 {
 }
 
 form {
-  margin-top: 20px;
+  display: grid;
+  gap: 20px;
 }
 
 input, textarea {
   width: 100%;
   padding: 12px;
-  margin: 10px 0 20px;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #c8a35f;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(200, 163, 95, 0.2);
 }
 
 button[type="submit"] {
