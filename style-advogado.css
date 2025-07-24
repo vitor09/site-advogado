@@ -232,7 +232,7 @@ footer {
     margin: 20px auto;
     width: 120px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 0%;
   }
 
   header.hero {
