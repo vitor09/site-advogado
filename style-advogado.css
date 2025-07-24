@@ -224,3 +224,25 @@ footer {
     transform: scale(1.1);
   }
 }
+
+@media (max-width: 768px) {
+  .profile-pic {
+    position: static;
+    display: block;
+    margin: 20px auto;
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  header.hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
